@@ -65,7 +65,7 @@ $spryng = new Spryng($apiKey);
 
 $response = $spryng->message->getMessage("9dbc5ffb-7524-4fae-9514-51decd94a44f");
 
-if ($resposne->wasSuccessful())
+if ($response->wasSuccessful())
 {
 	echo "The body of the message is: " . $response->toObject()->getBody() . "\n";
 }
